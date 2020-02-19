@@ -37,4 +37,4 @@ cache:
     - $HOME/.android/build-cache
 
 script:
-   - ./gradlew clean build jacocoTestReport coveralls
+   - ./gradlew clean build jacocoTestReport
