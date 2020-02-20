@@ -11,38 +11,36 @@
 [![GithubForks][img-github-forks]][url-github-forks]
 
 ## Minimal Requirements
-* API 27 or above
-* Java 8.x
-* Android SDK Tools 26.1.1+
-* Android SDK Platform Tools 27.0.1+
-* Android Build Tools version 27.0.0+
+*   API 27 or above
+*   Java 8.x
+*   Android SDK Tools 26.1.1+
+*   Android SDK Platform Tools 27.0.1+
+*   Android Build Tools version 27.0.0+
 
-## Installing the SDK:
+## Installing the SDK
 1.  Add the JitPack repository to the your root `build.gradle` file at the end of the repository.
-
-```gradle
-allprojects {
-    repositories {
-        ...
-        maven { url 'https://jitpack.io' }
+    ```gradle
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
     }
-}
-```
+    ```
 
-2. Add the dependency for the Open Identity Android SDK:
-```gradle
-dependencies {
+2.  Add the dependency for the Open Identity Android SDK:
+    ```gradle
+    dependencies {
         compile 'com.github.open-identity-fabric:open-identity-android-sdk:1.+'
-}
-```
+    }
+    ```
 
-3. Within your Android project in Android Studio, open the build.gradle file of your app module (not the project build.gradle), and add the following line to the defaultConfig:
-```
-defaultConfig {
-    ...
-    manifestPlaceholders = ['openIdRedirectScheme': android.defaultConfig.applicationId]
-}
-```
+3.  Within your Android project in Android Studio, open the build.gradle file of your app module (not the project build.gradle), and add the following line to the defaultConfig:
+    ```defaultConfig {
+        ...
+        manifestPlaceholders = ['openIdRedirectScheme': android.defaultConfig.applicationId]
+    }
+    ```
 
 ## Initializing the Open Identity Android SDK
 
@@ -78,7 +76,7 @@ OpenIdentity.getInstance().initialize(getApplicationContext(), <client_id>, <dis
 
 ### Update Profile
 
-## Got Questions?
+## If you have questions
 Join us on [Slack](https://public-slack-channel.com) and chat with our dev team.
 
 ## License
@@ -106,6 +104,3 @@ This package contains code licensed under the Apache License, Version 2.0 (the "
 [url-github-stars]: https://github.com/open-identity-fabric/open-identity-android-sdk/stargazers
 [img-github-forks]: https://img.shields.io/github/forks/open-identity-fabric/open-identity-android-sdk.svg?style=social&label=Fork
 [url-github-forks]: https://github.com/open-identity-fabric/open-identity-android-sdk/network
-
-
-

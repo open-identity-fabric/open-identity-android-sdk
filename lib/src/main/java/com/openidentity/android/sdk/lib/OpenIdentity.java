@@ -3,13 +3,11 @@ package com.openidentity.android.sdk.lib;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-import java.net.URL;
-
 public class OpenIdentity {
     private static OpenIdentity instance;
 
     @NonNull
-    public static synchronized OpenIdentity getInstance(){
+    public static synchronized OpenIdentity getInstance() {
         if (null == instance) {
             synchronized (OpenIdentity.class) {
                 if (null == instance) {
@@ -20,11 +18,12 @@ public class OpenIdentity {
         return instance;
     }
 
-    private OpenIdentity(){}
+    private OpenIdentity()  {
+    }
 
     @NonNull
-    public OpenIdentity init (@NonNull Context context,
-                              @NonNull String client_id,
+    public OpenIdentity init(@NonNull Context context,
+                              @NonNull String clientId,
                               @NonNull String discoveryEndpointUrl) {
         // Initialize whatever is required
         return instance;
