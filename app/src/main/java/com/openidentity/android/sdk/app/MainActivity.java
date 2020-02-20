@@ -1,9 +1,7 @@
 package com.openidentity.android.sdk.app;
 
-import android.os.Bundle;
-
 import android.support.v7.app.AppCompatActivity;
-
+import android.os.Bundle;
 import com.openidentity.android.sdk.lib.OpenIdentity;
 
 public class MainActivity extends AppCompatActivity {
