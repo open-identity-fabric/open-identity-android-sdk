@@ -31,13 +31,12 @@
 2. Add the dependency for the Open Identity Android SDK:
     ```gradle
     dependencies {
-            compile 'com.github.open-identity-fabric:open-identity-android-sdk:1.+'
+        compile 'com.github.open-identity-fabric:open-identity-android-sdk:1.+'
     }
     ```
 
 3. Within your Android project in Android Studio, open the build.gradle file of your app module (not the project build.gradle), and add the following line to the defaultConfig:
-    ```
-    defaultConfig {
+    ```defaultConfig {
         ...
         manifestPlaceholders = ['openIdRedirectScheme': android.defaultConfig.applicationId]
     }
