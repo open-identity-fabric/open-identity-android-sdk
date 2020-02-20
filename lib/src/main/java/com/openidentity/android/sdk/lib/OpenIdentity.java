@@ -3,8 +3,6 @@ package com.openidentity.android.sdk.lib;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-import java.net.URL;
-
 public class OpenIdentity {
     private static OpenIdentity instance;
 
